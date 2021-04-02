@@ -11,8 +11,8 @@ import TableRow from '@material-ui/core/TableRow';
 import {getRounds} from "../network/network";
 
 /**
- * Component for Table. Since I did not modify rails backend and didn't want to spend too much time in general.
- * Essentially, props from the form will be use to search and get appropriate response from backend for tailored VC's
+ * Component for Table. Since I did not want to spend toomuch time modifying rails backend,
+ * Props from the form will be use to search and get appropriate response from the backend for tailored VC's
  * The table is currently not filtered.
  ***/
 const useStyles = makeStyles({
