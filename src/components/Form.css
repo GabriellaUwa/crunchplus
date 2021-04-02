@@ -1,0 +1,27 @@
+.title-div {
+    flex: 1;
+    margin-bottom: 5vh;
+}
+
+@media (min-width: 468px) {
+    .outer-div {
+        display: flex;
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    .text-style {
+        font-family: Trebuchet MS, serif;
+        font-size: 45px;
+        color: #A9F0FF;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .text-style {
+        font-family: Trebuchet MS, serif;
+        font-size: 30px;
+        color: #A9F0FF;
+    }
+}

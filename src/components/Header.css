@@ -1,0 +1,27 @@
+@media screen and (min-width: 601px) {
+    .header-caption {
+        font-family: "Trebuchet MS", serif;
+        font-size: 25px;
+        color: #A9F0FF;
+    }
+
+    .logo {
+        margin: 10px;
+        width: 150px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header-caption {
+        font-family: "Trebuchet MS", serif;
+        font-size: 18px;
+        color: #A9F0FF;
+    }
+
+    .logo {
+        margin: 7px;
+        width: 100px;
+        align-items: center;
+    }
+}
