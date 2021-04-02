@@ -88,7 +88,7 @@ export default function FormStuff() {
                                         fullWidth
                                         name="sector"
                                         component={Select}
-                                        label="What Category Are you Building For?"
+                                        label="What Category Are You Building For?"
                                         formControlProps={{fullWidth: true}}
                                         className={classes.select}
                                     >
@@ -104,7 +104,7 @@ export default function FormStuff() {
                                         fullWidth
                                         name="model"
                                         component={Select}
-                                        label="What is your business model?"
+                                        label="What is Your Business Model?"
                                         formControlProps={{fullWidth: true}}
                                         className={classes.select}
                                     >
@@ -133,7 +133,7 @@ export default function FormStuff() {
                                         fullWidth
                                         name="region"
                                         component={Select}
-                                        label="Location of Your Investor"
+                                        label="Location of Your Investor?"
                                         formControlProps={{fullWidth: true}}
                                         className={classes.select}
                                     >
