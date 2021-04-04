@@ -15,7 +15,7 @@ export default function Results(props) {
             </div>
             <div className="outer-div-2">
                 <div className="table-div">
-                    <Investors props={props}/>
+                    <Investors props={props.location.props.funding_type}/>
                 </div>
                 <div className="outer-div-3">
                     <div className="element2">

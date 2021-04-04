@@ -51,6 +51,8 @@ export default function FormStuff() {
         routeChange(values)
     };
 
+    const required = value => (value ? undefined : 'Required')
+
     const classes = useStyles();
     return (
         <div style={{padding: 16, margin: 'auto', maxWidth: 600, marginBottom: "50px"}}>
@@ -64,23 +66,24 @@ export default function FormStuff() {
             </div>
             <Form
                 onSubmit={onSubmit}
-                render={({handleSubmit, submitting}) => (
+                render={({handleSubmit}) => (
                     <form onSubmit={handleSubmit} noValidate>
                         <Paper style={{padding: 16}}>
                             <Grid container alignItems="flex-start" spacing={2}>
                                 <Grid item xs={12}>
                                     <Field
                                         fullWidth
-                                        name="fundingType"
+                                        name="funding_type"
                                         component={Select}
                                         label="What Round Are You Raising?"
                                         formControlProps={{fullWidth: true}}
                                         className={classes.select}
+                                        validate={required}
                                     >
-                                        <MenuItem value="seed">Seed</MenuItem>
+                                        <MenuItem value="angel">Pre-Seed</MenuItem>
                                         <MenuItem value="series-a"> Series A </MenuItem>
                                         <MenuItem value="series-b"> Series B </MenuItem>
-                                        <MenuItem value="series-c+"> Series C+ </MenuItem>
+                                        <MenuItem value="venture"> Series C+ </MenuItem>
                                     </Field>
                                 </Grid>
                                 <Grid item xs={12}>
