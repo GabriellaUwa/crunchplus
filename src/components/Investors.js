@@ -28,11 +28,11 @@ const useStyles = makeStyles({
 });
 
 const columns = [
-    {id: 'investor', label: 'Investor', minWidth: 120, align: 'left'},
-    {id: 'category', label: 'Category', minWidth: 120, align: 'left'},
-    {id: 'company', label: 'Company', minWidth: 120, align: 'left'},
-    {id: 'round', label: 'Round', minWidth: 120, align: 'left'},
-    {id: 'location', label: 'Location', minWidth: 100, align: 'left'}
+    {id: 'investor', label: 'Investor', minWidth: 100, align: 'left'},
+    {id: 'category', label: 'Category', minWidth: 130, align: 'left'},
+    {id: 'company', label: 'Company', minWidth: 100, align: 'left'},
+    {id: 'round', label: 'Round', minWidth: 130, align: 'left'},
+    {id: 'location', label: 'VC Location', minWidth: 100, align: 'left'}
 ];
 
 function createData(investor, category, company, round, location) {
@@ -66,11 +66,7 @@ const Investors = (props) => {
     }, []);
 
     const fetchInvestments = () => {
-        let round_type = "series-a"
-        if(props.props != null) {
-            round_type = props.props.toString()
-        }
-        getInvestorsByRaise(round_type).then(data => {
+        getInvestorsByRaise(props.props.toString()).then(data => {
             setRounds(rounds.concat(data["rounds"]));
         }).catch(console.log);
     };
