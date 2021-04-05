@@ -1,4 +1,4 @@
-import {AppBar, Toolbar, makeStyles} from '@material-ui/core'
+import {AppBar, Toolbar, makeStyles, Link} from '@material-ui/core'
 import logo from '../Crunch+.png'
 import "./Header.css"
 
@@ -27,9 +27,9 @@ export default function Header() {
         <div className={classes.root}>
             <AppBar position="static" className={classes.bar}>
                 <Toolbar>
-                    <a href="../App.js">
+                    <Link href="/" >
                         <img src={logo} className="logo"/>
-                    </a>
+                    </Link>
                     <text className="header-caption">
                         THE VC ENGINE FOR STARTUPS
                     </text>
