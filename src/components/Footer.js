@@ -8,10 +8,6 @@ const useStyles = makeStyles((theme) => ({
     root: {
         flexDirection: 'column',
     },
-    main: {
-        marginTop: theme.spacing(8),
-        marginBottom: theme.spacing(2),
-    },
     footer: {
         padding: theme.spacing(5, 2),
         backgroundColor: "transparent",

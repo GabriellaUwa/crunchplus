@@ -28,12 +28,6 @@ const useStyles = makeStyles({
             borderBottom: `2px solid #00A6B0`
         }
     },
-    label: {
-        "&.MuiFormLabel-root": {
-            color: '#00A6B0'
-        },
-        fullWidth: true,
-    }
 });
 
 export default function FormStuff() {
