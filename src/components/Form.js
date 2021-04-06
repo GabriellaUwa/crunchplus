@@ -137,8 +137,8 @@ export default function FormStuff() {
                                         <MenuItem value="SF">SF Bay Area</MenuItem>
                                         <MenuItem value="NY">New York</MenuItem>
                                         <MenuItem value="BOS">Boston</MenuItem>
-                                        <MenuItem value="BOS">Remote</MenuItem>
-                                        <MenuItem value="BOS">Doesn't Matter</MenuItem>
+                                        <MenuItem value="Remote">Remote</MenuItem>
+                                        <MenuItem value="NA">Doesn't Matter</MenuItem>
                                     </Field>
                                 </Grid>
                                 <Grid item style={{marginTop: 16}}>
